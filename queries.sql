@@ -274,16 +274,16 @@ WHERE "ProductOrders"."ProductId" = 2;
 -- SELECT 1
 --
 --
-SELECT "Products"."Name", "ProductOrders"."OrderQuantity"
+SELECT "Orders"."OrderNumber", "Products"."Name", "ProductOrders"."OrderQuantity"
 FROM "Orders"
 JOIN "ProductOrders" ON "Orders"."Id" = "ProductOrders"."OrderId"
 JOIN "Products" ON "ProductOrders"."ProductId" = "Products"."Id"
 WHERE ("Orders"."OrderNumber" = 'X529' AND "Products"."Name" = 'Flowbee');
--- --+---------+-----------------+
--- | Name    | OrderQuantity   |
--- |---------+-----------------|
--- | Flowbee | 2               |
--- +---------+-----------------+
+-- +---------------+---------+-----------------+
+-- | OrderNumber   | Name    | OrderQuantity   |
+-- |---------------+---------+-----------------|
+-- | X529          | Flowbee | 2               |
+-- +---------------+---------+-----------------+
 -- SELECT 1
 --
 --
