@@ -149,3 +149,12 @@ SELECT * FROM "Employees";
 --
 --
 
+
+-- EPIC MODE --
+CREATE TABLE "Departments"(
+  "Name"  TEXT,
+  "BuildingNumber"  INT NOT NULL
+);
+-- CREATE TABLE
+--
+--
